@@ -1,0 +1,1405 @@
+[
+  {
+    "After months of sheltering at home, 18 cohabitants on what so much togetherness has wrought.": {
+      "emotions_detected": [
+        "sadness"
+      ],
+      "emotion_scores": {
+        "sadness": 0.05183256817772307,
+        "fear": 0.021749970587213573,
+        "joy": 0.008350503840866361,
+        "disgust": 0.0010684316481889356,
+        "anger": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "If this were real life, I would have ended it. But this was no longer real life.": {
+      "emotions_detected": [
+        "sadness",
+        "fear"
+      ],
+      "emotion_scores": {
+        "sadness": 0.23226487109017274,
+        "fear": 0.07594672766813594,
+        "joy": 0.001221196978560317,
+        "disgust": 0,
+        "anger": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Not since The New York Post said I was dead have so many friends and lovers checked in on me.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.22024328797009013,
+        "fear": 0.03814769167723167,
+        "surprise": 0.030548896298994464,
+        "sadness": 0.009538891885603279,
+        "disgust": 0,
+        "anger": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "She wanted to connect without the cost of connection. Enter the rock climber.": {
+      "emotions_detected": [
+        "fear"
+      ],
+      "emotion_scores": {
+        "fear": 0.05734596465974599,
+        "joy": 0.04222686026257005,
+        "anger": 0.011599214063453225,
+        "disgust": 0,
+        "sadness": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "It’s hard to argue with the results.": {
+      "emotions_detected": [
+        "fear",
+        "sadness"
+      ],
+      "emotion_scores": {
+        "fear": 0.06901357581744194,
+        "sadness": 0.05648284911428923,
+        "anger": 0.0318766288148067,
+        "disgust": 0.006724321403011366,
+        "joy": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "(Yes, I actually prayed that he not be too young for me.)": {
+      "emotions_detected": [],
+      "emotion_scores": {
+        "surprise": 0.022398871041302913,
+        "joy": 0.02102907297707028,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "I thought my father was the only one with secret desires. Then my mother asked me to go for a walk.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.1211794948599389,
+        "fear": 0.02411078049143278,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Can anything good come from obsessing over a South Korean bodybuilder on social media?": {
+      "emotions_detected": [
+        "joy",
+        "surprise"
+      ],
+      "emotion_scores": {
+        "joy": 0.40478587976276714,
+        "surprise": 0.07739394618978064,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Life can be fleeting. She wanted to make sure he knew the risks of connection.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.05145439870232991,
+        "sadness": 0.037694609460797904,
+        "fear": 0.006302706166031458,
+        "disgust": 0,
+        "anger": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Thirteen years ago, my parents tried to wish away my gender transition. Now, Alzheimer’s threatens to erase their memory of me altogether.": {
+      "emotions_detected": [
+        "fear",
+        "joy"
+      ],
+      "emotion_scores": {
+        "fear": 0.09404926988151312,
+        "joy": 0.06735160427907484,
+        "sadness": 0.03514393799731375,
+        "anger": 0.01974195977146745,
+        "surprise": 0.01520914439322986,
+        "disgust": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "A mother who uses sign language sees an expressive upside to the hush that has fallen over the land.": {
+      "emotions_detected": [
+        "surprise"
+      ],
+      "emotion_scores": {
+        "surprise": 0.06345800612865432,
+        "joy": 0.029459533916804885,
+        "sadness": 0.018035142682516617,
+        "disgust": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "She didn’t want to go to Burning Man (for all the reasons people don’t), but then there she was, dancing naked in the desert, and it was good.": {
+      "emotions_detected": [
+        "joy",
+        "surprise"
+      ],
+      "emotion_scores": {
+        "joy": 0.3365731098285051,
+        "surprise": 0.05469715283569376,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "People have worse problems, but mine is having my boyfriend break up with me at the start of the pandemic.": {
+      "emotions_detected": [
+        "surprise"
+      ],
+      "emotion_scores": {
+        "surprise": 0.066062475480839,
+        "anger": 0.04974101922275235,
+        "sadness": 0.0470443563022648,
+        "disgust": 0.03495768421079573,
+        "joy": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "They liked their separate homes in separate cities until the choice became all-in or all-out.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.12385931928340185,
+        "surprise": 0.04417550293544847,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "After losing her husband on the eve of a pandemic, she anticipated despair but found resilience. Here’s why.": {
+      "emotions_detected": [
+        "sadness"
+      ],
+      "emotion_scores": {
+        "sadness": 0.07581623795459497,
+        "anger": 0.017164407075751443,
+        "fear": 0.016465091441003978,
+        "disgust": 0,
+        "joy": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "After spooky things started happening in our new house, a scary thing happened in our marriage.": {
+      "emotions_detected": [
+        "joy",
+        "surprise",
+        "anger"
+      ],
+      "emotion_scores": {
+        "joy": 0.12105122993963899,
+        "surprise": 0.10931732355923406,
+        "anger": 0.059110749001954385,
+        "fear": 0.04685948672738982,
+        "sadness": 0.01685575181718401,
+        "disgust": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "What if the fastest path to a committed relationship is to actively avoid one?": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.10432086671383617,
+        "surprise": 0.04993037250148008,
+        "fear": 0.0431684240709069,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "As a wife and a mother, I have learned how to tell the truth. Which is why I always know when my husband is lying.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.16844819800687527,
+        "surprise": 0.049957218237644936,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "If grief is the price of love, I am unable to pay.": {
+      "emotions_detected": [
+        "surprise"
+      ],
+      "emotion_scores": {
+        "surprise": 0.057094125783582465,
+        "fear": 0.02125406124057961,
+        "sadness": 0.015870785545115243,
+        "disgust": 0,
+        "anger": 0,
+        "joy": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "“Bend It Like Beckham” gave me a vision of my romantic future. My future had other ideas.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.16338657717736876,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "surprise": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Being awash in romantic complaints has left me — a Black woman who’s had heartache — feeling dismayed but hopeful.": {
+      "emotions_detected": [
+        "fear"
+      ],
+      "emotion_scores": {
+        "fear": 0.07932725677704307,
+        "joy": 0.03303135425057538,
+        "anger": 0.0236238502357312,
+        "disgust": 0,
+        "sadness": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Only twice have I felt a connection so strong that self-consciousness fell away. The first time was with an emu.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.10330950586259124,
+        "anger": 0.037090613210744125,
+        "sadness": 0.026554661680951018,
+        "disgust": 0,
+        "surprise": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "We barely spoke. He didn’t charge me. I’ll never forget it.": {
+      "emotions_detected": [],
+      "emotion_scores": {
+        "surprise": 0.021487800313358833,
+        "disgust": 0.006778328884879926,
+        "sadness": 0.0038043679876002758,
+        "anger": 0,
+        "joy": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Between a pandemic and military training, so much for college love being casual.": {
+      "emotions_detected": [
+        "fear",
+        "joy"
+      ],
+      "emotion_scores": {
+        "fear": 0.09153630877899094,
+        "joy": 0.08327080665289555,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "After a massive earthquake struck Haiti, a young woman turned in desperation to a Vodou priest. She could not have imagined what happened next.": {
+      "emotions_detected": [
+        "fear",
+        "sadness"
+      ],
+      "emotion_scores": {
+        "fear": 0.08611623408580736,
+        "sadness": 0.072514053577885,
+        "joy": 0.04052858077574213,
+        "disgust": 0,
+        "anger": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "I spent my childhood longing for my father, who disappeared after I was born. Then my mother found him in a brochure.": {
+      "emotions_detected": [
+        "sadness"
+      ],
+      "emotion_scores": {
+        "sadness": 0.0744516217089411,
+        "joy": 0.04386944814563311,
+        "disgust": 0,
+        "anger": 0,
+        "surprise": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Being single in your 30s can feel like waiting to enter a popular club, only to get in and think: What’s the big deal?": {
+      "emotions_detected": [
+        "anger",
+        "fear"
+      ],
+      "emotion_scores": {
+        "anger": 0.09529517964680867,
+        "fear": 0.05203147224560126,
+        "joy": 0.03470828617482241,
+        "disgust": 0,
+        "sadness": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "As a vulnerable girl at a remote commune, I sought solace from horses, goats, even a bear cub. Today’s dark times have sent me their way again.": {
+      "emotions_detected": [],
+      "emotion_scores": {
+        "surprise": 0.034864529503156313,
+        "joy": 0.0251408605282617,
+        "sadness": 0.002319022180751213,
+        "disgust": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "A young man returns to the Vietnamese orphanage he had spent 25 years trying to forget.": {
+      "emotions_detected": [],
+      "emotion_scores": {
+        "joy": 0.034310806462417444,
+        "sadness": 0.03049006542584102,
+        "fear": 0.0035281103392015636,
+        "disgust": 0,
+        "anger": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "A director of romantic comedies finds herself attending weddings with her ex-husband. Who wrote this script?": {
+      "emotions_detected": [
+        "joy",
+        "surprise"
+      ],
+      "emotion_scores": {
+        "joy": 0.2779622260392968,
+        "surprise": 0.05199558417375556,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Divided by race, politics and pasts, they found a place with each other … until they didn’t.": {
+      "emotions_detected": [
+        "surprise"
+      ],
+      "emotion_scores": {
+        "surprise": 0.07730785768630227,
+        "sadness": 0.041208427014234245,
+        "joy": 0.016698866135557454,
+        "disgust": 0.00851810721652596,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Agreeing to see him again would require a minor miracle. A minor miracle is exactly what happened.": {
+      "emotions_detected": [],
+      "emotion_scores": {
+        "surprise": 0.024173097371255586,
+        "joy": 0.019397319681585538,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "A young woman struggling with an eating disorder tries to shift from self-loathing to self-loving.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.07082345768079483,
+        "fear": 0.017517705515871472,
+        "sadness": 0.008611726295999801,
+        "surprise": 0.007113245641132249,
+        "disgust": 0,
+        "anger": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "If Tinder is about your first impression, working on a cruise ship is about your 15th impression, or 29th.": {
+      "emotions_detected": [],
+      "emotion_scores": {
+        "fear": 0.04218892086380804,
+        "surprise": 0.024461846019804192,
+        "joy": 0.011583244023449228,
+        "sadness": 0.0018027269786386677,
+        "disgust": 0,
+        "anger": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "For our 10th date, we crossed the ocean on a freighter. Turns out isolation can have surprising benefits for new love. (You can’t walk away.)": {
+      "emotions_detected": [
+        "joy",
+        "surprise"
+      ],
+      "emotion_scores": {
+        "joy": 0.1516087690324065,
+        "surprise": 0.07094802432924525,
+        "fear": 0.027625553550902904,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Separated from family and worried about patients and colleagues, an internist where the U.S. outbreak began counts losses and blessings.": {
+      "emotions_detected": [
+        "fear"
+      ],
+      "emotion_scores": {
+        "surprise": 0.02479619837508864,
+        "sadness": 0.022529969936724917,
+        "disgust": 0,
+        "anger": 0,
+        "joy": 0,
+        "fear": 0.05
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "As an undocumented immigrant in search of love, I had to lie to nearly every man I dated.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.14104600591208238,
+        "surprise": 0.04058972791965458,
+        "fear": 0.02815740630402762,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Company policy forbade her from getting personal with her online students. Whoops.": {
+      "emotions_detected": [],
+      "emotion_scores": {
+        "joy": 0.01120088959819087,
+        "fear": 0.0090187034527806,
+        "surprise": 0.007242511406927315,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "We met on the train, married and had two boys who resembled him. I had no idea how much that resemblance would rebuild me.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.18175155257833375,
+        "fear": 0.0037722663714240684,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "surprise": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "If my husband and I weren’t going to succeed at marriage, then we were going to excel at divorce.": {
+      "emotions_detected": [
+        "joy",
+        "surprise"
+      ],
+      "emotion_scores": {
+        "joy": 0.22429416492007484,
+        "surprise": 0.21376205907789686,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "He was over 70. I was 22. We both loved Fran Lebowitz. What was I doing on the back of his motorcycle?": {
+      "emotions_detected": [
+        "joy",
+        "surprise"
+      ],
+      "emotion_scores": {
+        "joy": 0.15993928408854127,
+        "surprise": 0.05069595912232419,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "After more than five decades together, a lack of conversation leads to a divided house and a “gray divorce.”": {
+      "emotions_detected": [
+        "surprise",
+        "joy"
+      ],
+      "emotion_scores": {
+        "surprise": 0.11648037704866386,
+        "joy": 0.06291501331315805,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "The loss of a loved one can complicate family math.": {
+      "emotions_detected": [
+        "joy",
+        "surprise"
+      ],
+      "emotion_scores": {
+        "joy": 0.13382487790753947,
+        "surprise": 0.0669595711235771,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "My parents wanted only the best for me. That was the problem.": {
+      "emotions_detected": [
+        "fear"
+      ],
+      "emotion_scores": {
+        "fear": 0.12568283086376295,
+        "anger": 0.03327827577474562,
+        "disgust": 0.02435234613033592,
+        "sadness": 0.014048214607243537,
+        "surprise": 0.013179348953133314,
+        "joy": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "“Never count on a man,” her father had told her. “They will always let you down.” So she didn’t, and they still did.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.07259619169356157,
+        "surprise": 0.031175104971482643,
+        "anger": 0.010090824864383698,
+        "fear": 0.007211851541181952,
+        "disgust": 0,
+        "sadness": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Blindness can make you paranoid in love. Is he looking at another woman? Is she prettier than me?": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.22167049862499713,
+        "surprise": 0.007917909162434053,
+        "fear": 0.001701066936680637,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "A motorcycle accident brings together four lives that had been kept intentionally separate.": {
+      "emotions_detected": [
+        "surprise",
+        "sadness"
+      ],
+      "emotion_scores": {
+        "surprise": 0.13471735663758166,
+        "sadness": 0.07173462342621166,
+        "fear": 0.03799000217912004,
+        "disgust": 0.035827413909930904,
+        "anger": 0.0045311785956565175,
+        "joy": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "My grandmother was getting married for the third time — to her former brother-in-law, of all people. I didn’t expect to envy them.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.17962730717894332,
+        "anger": 0.01715729168084866,
+        "disgust": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "For a struggling mother and daughter, a New Year’s Eve eviction leads to confusion, courage and grace.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.114905660647506,
+        "fear": 0.021634605886818273,
+        "surprise": 0.00005861588917019378,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  },
+  {
+    "Our house is a mess of misplaced possessions. I’m grateful for what this — and my son’s autism — has taught me.": {
+      "emotions_detected": [
+        "joy"
+      ],
+      "emotion_scores": {
+        "joy": 0.09702251231342546,
+        "surprise": 0.04382549816708522,
+        "disgust": 0,
+        "sadness": 0,
+        "anger": 0,
+        "fear": 0
+      },
+      "thresholds": {
+        "disgust": 0.05,
+        "sadness": 0.05,
+        "anger": 0.05,
+        "joy": 0.05,
+        "surprise": 0.05,
+        "fear": 0.05
+      },
+      "version": "7.0.7",
+      "author": "twinword inc.",
+      "email": "help@twinword.com",
+      "result_code": "200",
+      "result_msg": "Success"
+    }
+  }
+]

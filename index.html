@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Load color scale -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz" ></div>
+
+
+<!-- A bit of CSS: change stroke color of circle on hover (white -> black) -->
+<style>
+  body {
+  background-color:rgb(253, 248, 237);
+}
+  .bubbles {
+    /*stroke-width: 1px;
+    /* stroke: black; */
+    opacity: .5
+  }
+
+  .bubbles:hover {
+    /*stroke: black;*/
+    opacity: 1
+  }
+
+
+@font-face {
+  font-family: America Bold;
+  src: url(/GT-America-Mono-Bold-v1.otf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: America Regular;
+  src: url(/GT-America-Mono-Regular-v1.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 
+@font-face {
+  font-family: Value Sans;
+  src: url(/value-regular.ttf);
+} */
+
+/* @font-face {
+    font-family: Tiempos;
+    src: url(/TiemposHeadlineTest-Light.otf) format("opentype");
+    font-weight: light; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Tiempos Bold;
+    src: url(/TiemposHeadlineTest-Bold.otf) format("opentype");
+    font-weight: bold; 
+    font-style: normal;
+}
+@font-face {
+    font-family: Tiempos Medium Italic;
+    src: url(/TiemposHeadlineTest-MediumItalic.otf) format("opentype");
+    font-weight: medium; 
+    font-style: italic;
+} */
+
+
+  .selected {
+    opacity: 1 !important;
+    stroke: black;
+    stroke-width: 1px;
+  }
+
+  .tooltip {
+    position: absolute;
+  }
+
+  .tooltip div {
+    font-family: America Bold;
+    letter-spacing: -1px;
+    font-size: 1em;
+
+}
+
+</style>
+
+<script>
+
+  let subjNums =
+  {
+    '0': 'Love (Emotion)',
+    '1': 'Emotions',
+    '2': 'Marriages',
+    '3': 'Dating (Social)',
+    '4': 'Weight',
+    '5': 'Weddings and Engagements',
+    '6': 'Pregnancy and Obstetrics',
+    '7': 'Genetics and Heredity',
+    '8': 'Men',
+    '9': 'Motorcycles, Motor Bikes and Motorscooters',
+    '10': "Alzheimer's Disease",
+    '11': 'ADOPTIONS',
+    '12': 'Autism',
+    '13': 'Cooking and Cookbooks',
+    '14': 'Private and Sectarian Schools',
+    '15': 'Restaurants',
+    '16': 'Kissing',
+    '17': 'Babies',
+    '18': 'Children and Youth',
+    '19': 'ANIMALS',
+    '20': 'Religious Cults',
+    '21': 'Monkeys and Apes',
+    '22': 'Bars',
+    '23': 'Alcohol Abuse',
+    '24': 'Music',
+    '25': 'Automobiles',
+    '26': 'LIFE STYLES',
+    '27': 'Single Persons',
+    '28': 'Writing and Writers',
+    '29': 'Colleges and Universities',
+    '30': 'ABORTION',
+    '31': 'Gas (Fuel)',
+    '32': 'Cowboys and Cowgirls',
+    '33': 'Dating and Courtship',
+    '34': 'Dogs',
+    '35': 'Sex',
+    '36': 'Travel and Vacations',
+    '37': 'Bicycles and Bicycling',
+    '38': 'Depression (Mental)',
+    '39': 'Feminist Movement',
+    '40': 'Women',
+    '41': 'Families and Family Life',
+    '42': 'Indian-Americans',
+    '43': 'Age, Chronological',
+    '44': 'Cancer',
+    '45': 'Chairs',
+    '46': 'Friendship',
+    '47': 'Housing',
+    '48': 'Prayers and Prayer Books',
+    '49': 'UNITED STATES ARMAMENT AND DEFENSE',
+    '50': 'United States International Relations',
+    '51': 'Sushi',
+    '52': 'MARRIAGE',
+    '53': 'Computers and the Internet',
+    '54': 'AGE (CHRONOLOGICAL)',
+    '55': 'International Relations',
+    '56': 'Medicine and Health',
+    '57': 'Cremation',
+    '58': 'Drug Abuse and Traffic',
+    '59': 'Drugs (Pharmaceuticals)',
+    '60': 'Brain',
+    '61': 'Death and Dying',
+    '62': 'World Trade Center (NYC)',
+    '63': 'Grief (Emotion)',
+    '64': 'Race',
+    '65': 'Security and Warning Systems',
+    '66': 'AIRLINES AND AIRPLANES',
+    '67': 'JEWS',
+    '68': 'Homosexuality',
+    '69': "Valentine's Day",
+    '70': 'Colon',
+    '71': 'HURRICANE KATRINA',
+    '72': 'Home Repairs and Improvements',
+    '73': 'Divorce, Separations and Annulments',
+    '74': 'Christmas',
+    '75': 'Credit and Money Cards',
+    '76': 'Birth Control and Family Planning',
+    '77': 'Infertility',
+    '78': 'Bipolar Disorder',
+    '79': 'Identity Fraud',
+    '80': 'Sidewalks',
+    '81': 'Graffiti',
+    '82': 'Newspapers',
+    '83': 'Handicapped',
+    '84': 'Gifts',
+    '85': "Asperger's Syndrome",
+    '86': 'Online Dating',
+    '87': 'Women and Girls',
+    '88': 'Cystic Fibrosis',
+    '89': 'Hoarding',
+    '90': 'Mutual Funds',
+    '91': 'Parenting',
+    '92': 'Polygamy',
+    '93': 'Pilots',
+    '94': 'Muggings',
+    '95': 'ADULTERY',
+    '96': 'Mormons (Church of Jesus Christ of Latter-Day Saints)',
+    '97': 'Blogs and Blogging (Internet)',
+    '98': 'Babies and Infants',
+    '99': 'Judges',
+    '100': 'Obesity',
+    '101': 'Wills and Estates',
+    '102': 'Midwives',
+    '103': 'United States Defense and Military Forces',
+    '104': 'Traffic Accidents and Safety',
+    '105': 'Hikes and Hiking',
+    '106': 'Dating and Relationships',
+    '107': 'Pornography',
+    '108': 'Homosexuality and Bisexuality',
+    '109': 'Abstinence (Sexual)',
+    '110': 'Flowers and Plants',
+    '111': 'Poetry and Poets',
+    '112': 'Dreams',
+    '113': 'Blindness',
+    '114': 'Real Estate and Housing (Residential)',
+    '115': 'Doormen',
+    '116': 'Florists',
+    '117': 'Text Messaging',
+    '118': 'Astrology',
+    '119': 'Premature Babies',
+    '120': 'Millennial Generation',
+    '121': 'Podcasts',
+    '122': 'Men and Boys',
+    '123': 'Gender',
+    '124': 'Kidneys',
+    '125': "Mother's Day",
+    '126': 'Surgery and Surgeons',
+    '127': 'Zoos',
+    '128': 'Mental Health and Disorders',
+    '129': 'Proms',
+    '130': 'Psychics and Fortune Tellers',
+    '131': 'Pregnancy and Childbirth',
+    '132': 'Ex-Convicts',
+    '133': 'Suicides and Suicide Attempts',
+    '134': 'Honeymoons',
+    '135': 'Transgender and Transsexuals',
+    '136': 'Furniture',
+    '137': 'ARABIC LANGUAGE',
+    '138': 'Morning Sickness',
+    '139': 'Sleep',
+    '140': 'Refugees and Displaced Persons',
+    '141': 'Elderly',
+    '142': 'Hunting and Trapping',
+    '143': 'Tattoos',
+    '144': 'Race and Ethnicity',
+    '145': 'Bullies',
+    '146': 'undefined',
+    '147': 'Therapy and Rehabilitation',
+    '148': 'Dishwashers and Dishwashing',
+    '149': 'E-Mail',
+    '150': 'Pizza',
+    '151': 'Books and Literature',
+    '152': 'Orderliness and Clutter',
+    '153': 'Immigration and Emigration',
+    '154': 'Blacks',
+    '155': 'Children and Childhood',
+    '156': 'Sex Crimes',
+    '157': 'Disabilities',
+    '158': 'ADVERTISING AND MARKETING',
+    '159': "Parkinson's Disease",
+    '160': 'Renting and Leasing (Real Estate)',
+    '161': "Father's Day",
+    '162': 'Poker (Card Game)',
+    '163': 'Rabbits',
+    '164': 'Tests and Examinations',
+    '165': 'Dementia',
+    '166': 'Egg Donation and Freezing',
+    '167': 'Ghosts',
+    '168': 'Quarantines'
+  }
+  // var w = window.innerWidth;
+  // var h = window.innerHeight;
+
+
+  // var svg0 = d3.select('#my_dataviz')
+  //     .append("svg")
+  //     .append("rect")
+  //     .attr("width", "300%")
+  //     .attr("height", "300%")
+  //     .attr("fill", "rgb(245, 237, 220)");
+
+  // set the dimensions and margins of the graph
+  var margin = { top: 100, right: 125, bottom: 50, left: 125 },
+    width = window.innerWidth - margin.left - margin.right,
+    height = window.innerHeight - margin.top - 2 * margin.bottom;
+
+  // append the svg object to the body of the page
+  var svg = d3.select("#my_dataviz")
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform",
+      "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+
+  // var parseTime = d3.timeParse("%y");
+
+  //Read the data
+
+  d3.csv("simple_emotions3.csv", function (data) {
+
+    // ---------------------------//
+    //      Heading               //
+    // ---------------------------//
+
+        // Add Heading
+        svg.append("text")
+    .attr("font-family", "America Regular, monospace")
+    .attr("text-anchor", "end")
+    .attr("x", width/2 - margin.left - 60)
+    .attr("y", -40)
+    .text("Emotions in Modern Love")
+    .attr("font-size", "3em")
+    .attr("letter-spacing", "-1.5px")
+    .attr("font-size", "1.6em")
+    .attr("text-anchor", "start")
+
+    // ---------------------------//
+    //       AXIS  AND SCALE      //
+    // ---------------------------//
+
+    var parseTime = d3.timeParse("%Y-%m-%d");
+    
+      // format the data
+    data.forEach(function(d) {
+        d.date = parseTime(d.date);
+    });
+
+    // Add X axis
+    var x = d3.scaleTime()
+      //.domain([new Date("2004"), new Date("2020")])
+      .domain(d3.extent(data, function(d) { return d.date; }))
+      .range([50, width-100]);
+    svg.append("g")
+
+    let xAxisGenerator = d3.axisBottom(x)
+      // .tickFormat(d3.timeFormat("%Y"))
+      .tickFormat(d3.timeFormat("%Y"))
+      .ticks(16)
+      //.tickSize(10);
+    
+
+    let xAxis = svg.append("g")
+      .call(xAxisGenerator)
+      .attr("opacity", 0.5)
+      .attr("transform",`translate(${0},${height})`)
+      .attr("font-family", "America Regular, monospace")
+      .attr("font-size", ".8em");
+
+    svg.append("text")
+      .attr("font-family", "America Regular, monospace")
+      .attr("font-size", "1em")
+      .attr("letter-spacing", "-1px")
+      .attr("text-anchor", "end")
+      .attr("x", width + margin.right/2)
+      .attr("y", height +  8)
+      .text("Year Published");
+
+    // Add Y axis
+    var y = d3.scaleLinear()
+      .domain([-5, 168])
+      .range([height, 50]);
+    svg.append("g")
+
+    let yAxisGenerator = d3.axisLeft(y)
+      
+
+    let yAxis = svg.append("g")
+      .call(yAxisGenerator)
+      .attr("opacity", 0.5)
+      .attr("font-family", "America Regular, monospace")
+      .attr("font-size", ".8em")
+      .attr("letter-spacing", "-.5px")
+      .attr("transform", `translate(${margin.left/4},0)`)
+      .call(d3.axisRight(y)
+          .tickSize(width-130)
+          .tickFormat(formatTick))
+      .call(g => g.select(".domain")
+          .remove())
+      .call(g => g.selectAll(".tick")
+          .attr("stroke-opacity", 0.5)
+          .attr("stroke-dasharray", "2,2"))
+      .call(g => g.selectAll(".tick text")
+          .attr("x", -10)
+          .attr("dy", 0))
+  
+    function formatTick(d) {
+      if (subjNums[d] == undefined) return subjNums[d];
+
+      let subjN = subjNums[d];
+      let words = subjN.split(' ');
+      let newword = ""
+      for (let i=0; i<words.length; i++) {
+        if (newword.length < 10) {
+          if (i == 0) {
+            newword += words[i];
+          } else {
+            newword += ' ' + words[i];
+          }
+        } 
+      }
+      if (newword.length > 15) {
+          let words2 = newword.split(' ');
+          newword = ""
+          for (let i = 0; i< words2.length-1; i++) {
+            if (i==0) {
+              newword += words2[i];
+            } else {
+              newword += ' ' + words2[i]
+            }
+            
+          }
+        }
+      if (!(newword.length === subjN.length)) {
+        console.log(newword.length, subjN.length)
+        newword += "..."
+      }
+      return newword
+}
+    // Add Y axis label:
+    svg.append("text")
+      .attr("font-family", "America Regular, monospace")
+      // .attr("font-family","Recoleta, monospace")
+      .attr("text-anchor", "end")
+      .attr("x", -45)
+      .attr("y", margin.bottom/2)
+      // .attr("x", -140)
+      // .attr("y", height/2)
+      // .attr("transform", `translate(-500, ${height/3}) rotate(270)`)
+      .text("Subject")
+      .attr("font-size", "1em")
+      .attr("letter-spacing", "-1px")
+      .attr("text-anchor", "start")
+      
+
+    // Add a scale for bubble size
+    var z = d3.scaleSqrt()
+      // .domain([200, 1310000])
+      .domain([0, .5])
+      .range([1, 20]);
+
+    // Add a scale for bubble color
+    var myColor = d3.scaleOrdinal()
+      .domain(["joy", "surprise", "anger", "sadness", "fear", "disgust"])
+      .range(["FBCA1F", "#FF56B1", "C92E2E", "6094E2", "835AC6", "39A15D"])
+
+    // ---------------------------//
+    //      TOOLTIP               //
+    // ---------------------------//
+
+    // -1- Create a tooltip div that is hidden by default:
+    var tooltip = d3.select("#my_dataviz")
+      .append("div")
+      .style("opacity", 0)
+      .attr("class", "tooltip")
+      .style("background-color", "#F5EDDC")
+      // .style("box-shadow", "2px 2px 10px #EEDFC0")
+      .style("border-radius", "10px")
+      .style("padding", "20px")
+      .style("color", "black")
+      .style("margin-top", "-64px")
+      .style("line-height", "1.1")
+      .style("margin-left", "18px")
+
+    // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
+    var showTooltip = function (d) {
+      //console.log("showTooltip")
+      tooltip
+        .transition()
+        .duration(200)
+      tooltip
+        .style("opacity", 1)
+
+        .style("font-family", "America Bold, monospace")
+
+        // .append("div")
+        .html(d.headline + "<br>")
+        .append("div")
+
+        .html(subjNums[d.subject] + "<br>" + "<br>" + d.abstract)
+
+        .style("font-family", "America Regular, sans-serif")
+        .style("font-size", ".85em")
+        .style("line-height","130%")
+        .style("letter-spacing", "-.5px")
+        // .html("Title: " + d.headline + "<br>" + "Subject: " + subjNums[d.subject] + "<br>" + d.abstract)
+
+    }
+    var moveTooltip = function (d) {
+      tooltip
+        .style("left", "200px")
+        .style("top", "100px")
+        .style("width", "350px")
+        .style("left", (d3.mouse(this)[0] + 30) + "px")
+        .style("top", (d3.mouse(this)[1] + 30) + "px")
+    }
+    var hideTooltip = function (d) {
+      tooltip
+        .transition()
+        .duration(200)
+        .style("opacity", 0)
+    }
+
+
+    // ---------------------------//
+    //       HIGHLIGHT GROUP      //
+    // ---------------------------//
+
+    // What to do when one group is hovered
+    var highlight = function (d) {
+      // reduce opacity of all groups
+      d3.selectAll(".bubbles").style("opacity", 0)
+      // except the one that is hovered
+      d3.selectAll("." + d).style("opacity", .4)
+    }
+
+    // And when it is not hovered anymore
+    var noHighlight = function (d) {
+      d3.selectAll(".bubbles").style("opacity", .4)
+    }
+
+    // ---------------------------//
+    //       Brushing              //
+    // ---------------------------//
+
+
+    // Add a clipPath: everything out of this area won't be drawn.
+    var clip = svg.append("defs").append("svg:clipPath")
+      .attr("id", "clip")
+      .append("svg:rect")
+      .attr("width", width)
+      .attr("height", height)
+      .attr("x", 0)
+      .attr("y", 0);
+
+    // // Color scale: give me a specie name, I return a color
+    // var color = d3.scaleOrdinal()
+    //   .domain(["setosa", "versicolor", "virginica"])
+    //   .range(["#440154ff", "#21908dff", "#fde725ff"])
+
+    // Add brushing
+    var brush = d3.brushY()                 // Add the brush feature using the d3.brush function
+      .extent([[0, 0], [width, height]]) // initialise the brush area: start at 0,0 and finishes at width,height: it means I select the whole graph area
+      .on("end", updateChart) // Each time the brush selection changes, trigger the 'updateChart' function
+
+    // Create the scatter variable: where both the circles and the brush take place
+    var scatter = svg.append('g')
+      .attr("clip-path", "url(#clip)")
+    
+    // Add the brushing
+    scatter
+      .append("g")
+      .attr("class", "brush")
+      .call(brush);
+
+    // ---------------------------//
+    //       CIRCLES              //
+    // ---------------------------//
+
+    //       "country","continent","lifeExp","pop","gdpPercap"
+    // "abstract","emotion","subject","emotVal","yearWritten"
+
+    // Add dots
+    //x.domain(d3.extent(data, function (d) { return d.date.match(/.{1,4}/g)[0]; })); 
+    x.domain(d3.extent(data, function (d) { return d.date; })); 
+    
+    scatter
+      .selectAll("dot")
+      .data(data)
+      .enter()
+
+      .append("circle")
+      .attr("class", function (d) { return "bubbles " + d.emotion })
+      //.attr("cx", function (d) { return x(d.date.match(/.{1,4}/g)[0]); })
+      .attr("cx", function (d) { return x(d.date); })
+      .attr("cy", function (d) { return y(d.subject); })
+      .attr("r", function (d) { return z(d.emotVal); })
+      .style("fill", function (d) { return myColor(d.emotion); })
+      // -3- Trigger the functions for hover
+      .on("mouseover", showTooltip)
+      .on("mousemove", moveTooltip)
+      .on("mouseleave", hideTooltip)
+
+
+    // A function that set idleTimeOut to null
+    var idleTimeout
+    function idled() { idleTimeout = null; }
+    
+    // ---------------------------//
+    //       UPDATE               //
+    // ---------------------------//
+
+    // A function that update the chart for given boundaries
+    function updateChart() {
+
+      extent = d3.event.selection //[topX, bottomX] of selection , 
+
+      // If no selection, back to initial coordinate. Otherwise, update Y axis domain
+      if (!extent) {
+        if (!idleTimeout) return idleTimeout = setTimeout(idled, 350); // This allows to wait a little bit
+        y.domain([-10, 168])
+      } else {
+        console.log(extent);
+        y.domain([y.invert(extent[1]), y.invert(extent[0])]) 
+        scatter.select(".brush").call(brush.move, null) // This remove the grey brush area as soon as the selection has been done
+      }
+
+      // Update axis and circle position
+      yAxis
+        .transition()
+        .duration(1000)
+        //.call(d3.axisLeft(y))
+        .call(yAxisGenerator)
+        .call(g => g.select(".domain")
+            .remove())
+        .attr("opacity", 0.5)
+        .attr("font-family", "America Regular, monospace")
+        .attr("font-size", "0.8em")
+        .attr("letter-spacing", "-.5px")
+        .attr("transform", `translate(${margin.left/4},0)`)
+        .call(d3.axisRight(y)
+            .tickSize(width-130)
+            .tickFormat(formatTick))
+        .call(g => g.selectAll(".tick")
+            .attr("stroke-opacity", 0.5)
+            .attr("stroke-dasharray", "2,2"))
+        .call(g => g.selectAll(".tick text")
+            .attr("x", -10)
+            .attr("dy", 0))
+      
+      
+      scatter
+        .selectAll("circle")
+        .transition().duration(1000)
+        .attr("class", function (d) { return "bubbles " + d.emotion })
+        .attr("cx", function (d) { return x(d.date); })
+        .attr("cy", function (d) { return y(d.subject); })
+        .attr("r", function (d) { 
+
+          return z(d.emotVal); 
+          
+          })
+
+    }
+
+    // ---------------------------//
+    //       LEGEND              //
+    // ---------------------------//
+
+    // Add legend: circles
+    var valuesToShow = [10000000, 100000000, 1000000000]
+    var xCircle = 390
+    var xLabel = 440
+    // Population Circles Legend
+    // svg
+    //   .selectAll("legend")
+    //   .data(valuesToShow)
+    //   .enter()
+    //   .append("circle")
+    //     .attr("cx", xCircle)
+    //     .attr("cy", function(d){ return height - 100 - z(d) } )
+    //     .attr("r", function(d){ return z(d) })
+    //     .style("fill", "none")
+    //     .attr("stroke", "black")
+
+    // Add legend: segments
+    svg
+      .selectAll("legend")
+      .data(valuesToShow)
+      .enter()
+      .append("line")
+      .attr('x1', function (d) { return xCircle + z(d) })
+      .attr('x2', xLabel)
+      .attr('y1', function (d) { return height - 100 - z(d) })
+      .attr('y2', function (d) { return height - 100 - z(d) })
+      .attr('stroke', 'black')
+      .style('stroke-dasharray', ('2,2'))
+
+    // Add legend: labels
+    svg
+      .selectAll("legend")
+      .data(valuesToShow)
+      .enter()
+      .append("text")
+      .attr('x', xLabel)
+      // .attr("font-family","Recoleta, monospace")
+      .attr("font-family", "America Bold, monospace")
+      .attr('y', function (d) { return height - 100 - z(d) })
+      .text(function (d) { return d / 1000000 })
+      .style("font-size", 15)
+      .attr('alignment-baseline', 'middle')
+
+    // Legend title
+    // svg.append("text")
+    //   .attr('x', xCircle)
+    //   .attr("y", height - 100 +30)
+    //   .text("Population (M)")
+    //   .attr("text-anchor", "middle")
+
+    // Add one dot in the legend for each name.
+    var size = 20
+    var allgroups = ["joy", "anger", "sadness", "fear", "disgust", "surprise"]
+    svg.selectAll("myrect")
+      .data(allgroups)
+      .enter()
+      .append("circle")
+      .attr("font-family", "America Regular, monospace")
+      // .attr("font-family","Recoleta, monospace")
+      .attr("cx", width - margin.right/4)
+      .attr("cy", function (d, i) { return 50 + i * (size + 5) }) // 100 is where the first dot appears. 25 is the distance between dots
+      .attr("r", 8)
+      .attr("font-size", "2em")
+      .style("fill", function (d) { return myColor(d) })
+      .on("mouseover", highlight)
+      .on("mouseleave", noHighlight)
+
+    // Add labels beside legend dots
+    svg.selectAll("mylabels")
+      .data(allgroups)
+      .enter()
+      .append("text")
+      //   .attr("font-family","Recoleta, monospace")
+      .attr("font-family", "America Regular, monospace")
+      .attr("font-size", ".9em")
+      .attr("letter-spacing", "-1px")
+      .attr("fill", "black")
+      .attr("x", width - margin.right/4 + 20)
+      .attr("y", function (d, i) { return i * (size + 5.35) + 30 + (size) }) // 100 is where the first dot appears. 25 is the distance between dots
+      // .style("fill", function (d) { return myColor(d) })
+      .text(function (d) { return d })
+      .attr("text-anchor", "left")
+      .style("alignment-baseline", "middle")
+      .style("text-transform", "capitalize")
+      .on("mouseover", highlight)
+      .on("mouseleave", noHighlight)
+  
+
+      function wrap(text, width) {
+        console.log("wrapping")
+        console.log(text)
+        text.each(function() {
+          var text = d3.select(this),
+              words = text.text().split(/\s+/).reverse(),
+              word,
+              line = [],
+              lineNumber = 0,
+              lineHeight = 0.5, // ems
+              y = text.attr("y"),
+              dy = parseFloat(text.attr("dy")), 
+              tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em")
+              console.log(dy)
+              //console.log(this)
+          while (word = words.pop()) {
+            line.push(word)
+            // console.log(word)
+            tspan.text(line.join(" "))
+            if (tspan.node().getComputedTextLength() > width) {
+              line.pop()
+              tspan.text(line.join(" "))
+              line = [word]
+              tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", `${++lineNumber * lineHeight + dy}em`).text(word)
+            }
+          }
+        })
+      }
+  })
+
+
+</script>
